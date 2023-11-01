@@ -4,8 +4,7 @@
   "description": "Testes automatizados para aula prática Mentorama",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open",
-    "build": "webpack --config cypress.json"
+    "test": "npx cypress open"
   },
   "author": "Karoline Santos",
   "license": "ISC",
