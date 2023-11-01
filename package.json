@@ -1,0 +1,14 @@
+{
+  "name": "mentorama-pratica",
+  "version": "1.0.0",
+  "description": "Testes automatizados para aula prática Mentorama",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Karoline Santos",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.7.0"
+  }
+}
