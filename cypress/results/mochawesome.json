@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-01T13:11:42.305Z",
+    "end": "2023-11-01T13:11:52.700Z",
+    "duration": 10395,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "345785d7-a334-4deb-bbf3-c1683d66bd22",
+      "title": "",
+      "fullFile": "cypress/integration/testes cadastro/cadastro.spec.js",
+      "file": "cypress/integration/testes cadastro/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "94c404c0-726c-4eed-9d66-0feb8d056100",
+          "title": "Validar funcionamento de cadastro e login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Não devo conseguir realizar cadastro sem e-mail",
+              "fullTitle": "Validar funcionamento de cadastro e login Não devo conseguir realizar cadastro sem e-mail",
+              "timedOut": null,
+              "duration": 3532,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#nome').type('Karoline Santos');\ncy.get('#senha').type('12345678');\ncy.get('.btn').click();\ncy.get('.alert').should('contain', 'Email é um campo obrigatório');",
+              "err": {},
+              "uuid": "bf4b06fb-c1e2-4328-9126-c2b95306700c",
+              "parentUUID": "94c404c0-726c-4eed-9d66-0feb8d056100",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não devo conseguir realizar cadastro sem senha",
+              "fullTitle": "Validar funcionamento de cadastro e login Não devo conseguir realizar cadastro sem senha",
+              "timedOut": null,
+              "duration": 1416,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#nome').type('Karoline Santos');\ncy.get('#email').type('karol@mentorama.com');\ncy.get('.btn').click();\ncy.get('.alert').should('contain', 'Senha é um campo obrigatório');",
+              "err": {},
+              "uuid": "0939564c-cc59-4aa2-8aa6-97e3de9f1b9e",
+              "parentUUID": "94c404c0-726c-4eed-9d66-0feb8d056100",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não devo conseguir realizar cadastro com email já cadastro",
+              "fullTitle": "Validar funcionamento de cadastro e login Não devo conseguir realizar cadastro com email já cadastro",
+              "timedOut": null,
+              "duration": 2887,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#nome').type('Karoline Santos');\ncy.get('#email').type('karoline@mentorama.com');\ncy.get('#senha').type('12345678');\ncy.get('.btn').click();\ncy.get('.alert').should('contain', 'Endereço de email já utilizado');",
+              "err": {},
+              "uuid": "73ae0c8b-259f-4958-9e3a-f3fcaac51329",
+              "parentUUID": "94c404c0-726c-4eed-9d66-0feb8d056100",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Devo realizar login com sucesso",
+              "fullTitle": "Validar funcionamento de cadastro e login Devo realizar login com sucesso",
+              "timedOut": null,
+              "duration": 2402,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://seubarriga.wcaquino.me/login');\ncy.realizarLoginComSucesso();\ncy.get('.btn').click();\ncy.get('.alert').should('contain', 'Bem vindo, Karoline Santos!');",
+              "err": {},
+              "uuid": "03c39c68-7114-4c86-9cfd-0b1bf3572efe",
+              "parentUUID": "94c404c0-726c-4eed-9d66-0feb8d056100",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bf4b06fb-c1e2-4328-9126-c2b95306700c",
+            "0939564c-cc59-4aa2-8aa6-97e3de9f1b9e",
+            "73ae0c8b-259f-4958-9e3a-f3fcaac51329",
+            "03c39c68-7114-4c86-9cfd-0b1bf3572efe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10237,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "video": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
